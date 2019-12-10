@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>이력 관리</title>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('btn').onclick = function() {
+              var link = "https://spreadsheets.google.com/tq?tqx=out:html&tq=SELECT+A,B,C,D,E,F,G+WHERE+B+CONTAINS+'" + document.getElementById("SN").value + "'&key=1dzrBXugvHYfXKImKIiUhll2Y4hv5KqwAGK5U65WV1rc&gid=1042965939"
+              location.replace(link);
+              return false;
+          };
+      };
+    </script>
+  </head>
+  <body>
+    <form action="https://docs.google.com/spreadsheets/d/1dzrBXugvHYfXKImKIiUhll2Y4hv5KqwAGK5U65WV1rc/gviz/tq?tqx=out:html&tq=SELECT+A,B,C,D,E,F,G+WHERE+B+CONTAINS+%27901KCTBM7409%27&gid=1042965939">
+      시리얼 넘버 : <input type="text" id="SN" name="SN" size="12">
+      <input type="button" id="btn" value="확인">
+    </form>
+  </body>
+</html>
