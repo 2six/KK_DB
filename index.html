@@ -5,7 +5,7 @@
       window.onload = function() {
           document.getElementById('btn').onclick = function() {
               var link = "https://spreadsheets.google.com/tq?tqx=out:html&tq=SELECT+A,B,C,D,E,F,G+WHERE+B+CONTAINS+'" + document.getElementById("SN").value + "'&key=1dzrBXugvHYfXKImKIiUhll2Y4hv5KqwAGK5U65WV1rc&gid=1042965939"
-              location.replace(link);
+              location.href = link;
               return false;
           };
       };
@@ -16,6 +16,6 @@
       시리얼 넘버 : <input type="text" id="SN" name="SN" size="12">
       <input type="button" id="btn" value="확인">
     </form>
-    <a href=https://docs.google.com/forms/d/1boEaKK8VE-a-DyJpXcGjpn9ymNwVXS7qGaYMJmDGft4/edit><input type=button value="이력입력"></a>
+    <a href=https://forms.gle/RQTa96LJmPxVzNrK6><input type=button value="이력입력"></a>
   </body>
 </html>
